@@ -1,0 +1,15 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Building"
+npm run build
+
+if [[ $(git diff --stat) != '' ]]; then
+  echo "Build contents are different, committing changes."
+  git add docs
+  git commit -m 'dist: Create build'
+else
+  echo "No new changes to commit."
+fi
+
+

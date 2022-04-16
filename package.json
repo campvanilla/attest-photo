@@ -8,8 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src",
     "dev": "vite",
+    "prebuild": "rm -rf docs",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "typescript": "^4.6.3",
-    "vite": "^2.9.2"
+    "vite": "^2.9.2",
+    "husky": "^7.0.0"
   }
 }
