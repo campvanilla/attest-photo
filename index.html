@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Attest Photos</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>Attest Photos</h1>
+
+      <form id="image-upload-form">
+        <input type="file" accept="jpg,jpeg,png" name="image" placeholder="Add image" />
+        <textarea placeholder="Enter your attestation text"></textarea>
+        <button type="submit">Upload</button>
+      </form>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

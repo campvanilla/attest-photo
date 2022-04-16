@@ -1,8 +1,11 @@
 import './style.css';
 
-const app = document.querySelector<HTMLDivElement>('#app')!;
+const imageUploadForm = document.getElementById('image-upload-form');
 
-app.innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+imageUploadForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (event.target) {
+    const data = new FormData(event.target as HTMLFormElement);
+    console.log(data);
+  }
+});

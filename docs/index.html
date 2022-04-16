@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index.ad4f7fa4.js"></script>
-    <link rel="stylesheet" href="/assets/index.06d14ce2.css">
+    <title>Attest Photos</title>
+    <script type="module" crossorigin src="/attest-photo/assets/index.a7150170.js"></script>
+    <link rel="stylesheet" href="/attest-photo/assets/index.06d14ce2.css">
   </head>
   <body>
-    <div id="app"></div>
-    
+    <div id="app">
+      <h1>Attest Photos</h1>
+
+      <form id="image-upload-form">
+        <input type="file" accept="jpg,jpeg,png" name="image" placeholder="Add image" />
+        <textarea placeholder="Enter your attestation text"></textarea>
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+
   </body>
 </html>
