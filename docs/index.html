@@ -5,18 +5,24 @@
     <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Attest Photos</title>
-    <script type="module" crossorigin src="/attest-photo/assets/index.a7150170.js"></script>
-    <link rel="stylesheet" href="/attest-photo/assets/index.06d14ce2.css">
+    <script type="module" crossorigin src="/attest-photo/assets/index.9351896b.js"></script>
+    <link rel="stylesheet" href="/attest-photo/assets/index.61611a96.css">
   </head>
   <body>
     <div id="app">
       <h1>Attest Photos</h1>
-
-      <form id="image-upload-form">
-        <input type="file" accept="jpg,jpeg,png" name="image" placeholder="Add image" />
-        <textarea placeholder="Enter your attestation text"></textarea>
-        <button type="submit">Upload</button>
-      </form>
+      <div class="container">
+        <main class="canvas-area">
+          <canvas id="workspace-canvas"></canvas>
+        </main>
+        <aside class="controls">
+          <form id="image-upload-form">
+            <input type="file" accept="jpg,jpeg,png" name="image" placeholder="Add image" />
+            <textarea name="attestation-text" placeholder="Enter your attestation text"></textarea>
+            <button type="submit">Upload</button>
+          </form>
+        </aside>
+      </div>
     </div>
     
   </body>
