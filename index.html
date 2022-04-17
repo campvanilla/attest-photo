@@ -9,12 +9,18 @@
   <body>
     <div id="app">
       <h1>Attest Photos</h1>
-
-      <form id="image-upload-form">
-        <input type="file" accept="jpg,jpeg,png" name="image" placeholder="Add image" />
-        <textarea placeholder="Enter your attestation text"></textarea>
-        <button type="submit">Upload</button>
-      </form>
+      <div class="container">
+        <main class="canvas-area">
+          <canvas id="workspace-canvas"></canvas>
+        </main>
+        <aside class="controls">
+          <form id="image-upload-form">
+            <input type="file" accept="jpg,jpeg,png" name="image" placeholder="Add image" />
+            <textarea name="attestation-text" placeholder="Enter your attestation text"></textarea>
+            <button type="submit">Upload</button>
+          </form>
+        </aside>
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
